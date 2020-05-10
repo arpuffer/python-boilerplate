@@ -13,7 +13,7 @@ def main(args):
     raise NotImplementedError
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="RFID Tag Historical Query")
+    parser = argparse.ArgumentParser(description="Some Description")
     parser.add_argument("some_string", type=str)
     parser.add_argument(
         "some_int",
@@ -26,4 +26,4 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    main(args.filepath, args.timestamp, args.move_threshold, args.expiry_period)
+    main(args.some_string, args.some_int)
